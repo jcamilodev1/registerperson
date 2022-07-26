@@ -1,21 +1,16 @@
 <template>
-  <section>
-    <Form></Form>
-    <h1>hola mundo</h1>
-  </section>
-  
+  <Home></Home>
 </template>
 
 <script>
-import Form from './components/form.vue';
+import Home from '@/views/Home.vue'
 export default {
-components: { Form },
+components: { Home },
   setup() {
 
   }
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
