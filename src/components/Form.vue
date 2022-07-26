@@ -120,7 +120,6 @@ export default {
           title: "Usuario guardado con exito",
           type: 'success',
         });
-        console.log(data)
         limpiar.value = !limpiar.value;
         v$.value.$touch()
       } else {

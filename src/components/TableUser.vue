@@ -43,6 +43,10 @@ section {
   .table {
     max-height: 600px;
     overflow-y: scroll;
+    @media (max-width: 700px){
+      max-height: 100%;
+      overflow: auto;
+    }
     &::-webkit-scrollbar {
       width: 8px; 
       height: 8px; 

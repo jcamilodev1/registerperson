@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { onMounted } from '@vue/runtime-core';
+import { onMounted } from "@vue/runtime-core";
 export default {
   name: "Home",
 
@@ -20,9 +20,9 @@ export default {
       return res.data;
     };
     onMounted(async () => {
-      const data = await getperson()
-      if(localStorage.getItem('personData') === null){
-        localStorage.setItem('personData',  JSON.stringify(data));
+      const data = await getperson();
+      if (localStorage.getItem("personData") === null) {
+        localStorage.setItem("personData", JSON.stringify(data));
       }
     });
     return {};
@@ -44,6 +44,11 @@ export default {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 700px) {
+  #Home {
+    padding-top: 30px;
+  }
+}
 #Home > article {
   width: 60%;
   max-width: 600px;
@@ -60,10 +65,10 @@ export default {
 #Home > article a:hover {
   text-decoration: underline;
 }
-@media (max-width: 700px){
-#Home > article {
-  width: 90%;
-  max-width: 600px;
-}
+@media (max-width: 700px) {
+  #Home > article {
+    width: 90%;
+    max-width: 600px;
+  }
 }
 </style>
