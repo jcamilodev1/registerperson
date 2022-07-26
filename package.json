@@ -10,6 +10,9 @@
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'"
   },
   "dependencies": {
+    "@kyvg/vue3-notification": "^2.3.5",
+    "@vuelidate/core": "^2.0.0-alpha.43",
+    "@vuelidate/validators": "^2.0.0-alpha.31",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
   },
